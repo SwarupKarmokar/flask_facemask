@@ -1,6 +1,6 @@
 numpy
 opencv-contrib-python-headless
 scikit-learn
-windsound
+winsound
 pickle
 gunicorn
