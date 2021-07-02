@@ -2,7 +2,7 @@ from flask import Flask, render_template, Response
 import cv2
 import pickle
 import numpy as np
-import winsound
+# import winsound
 from pandas.core import frame
 from sklearn.model_selection import train_test_split
 from sklearn.decomposition import PCA
@@ -52,7 +52,7 @@ def gen_frame():
            
             if output == "No_Mask":
                 cv2.putText(frame, output, (x,y), font, 1, (0,0,255), 2)              
-                winsound.Beep(frequency=1000, duration=100)
+#                 winsound.Beep(frequency=1000, duration=100)
                 
             elif output == "Mask":
                 cv2.putText(frame, output, (x,y), font, 1, (0,255,0), 2)
