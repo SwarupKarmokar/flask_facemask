@@ -37,7 +37,7 @@ def gen_frame():
         font = cv2.FONT_HERSHEY_COMPLEX
         ret, frame = cam.read()
 
-        cord = face_img(cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY))
+        cord = face_img(frame)
         for x,y,w,h in cord:
             cv2.rectangle(frame, (x,y), (x+w, y+h), (255,200,255), 4)
         
