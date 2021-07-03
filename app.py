@@ -31,7 +31,7 @@ def face_img(img):
     cords = haar.detectMultiScale(img)
     return cords
 
-cam = cv2.VideoCapture(0)
+cam = cv2.VideoCapture(-1)
 def gen_frame():
     while True:
         font = cv2.FONT_HERSHEY_COMPLEX
